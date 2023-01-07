@@ -3,8 +3,8 @@ package ru.netology.javacore;
 import java.util.*;
 
 public class Todos {
-    List<String> todos = new ArrayList<>();
-    final int MAXTODOS = 7;
+    private List<String> todos = new ArrayList<>();
+    static int MAXTODOS;
 
     public void addTask(String task) {
         if (todos.size() < MAXTODOS) {

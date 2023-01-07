@@ -35,6 +35,7 @@ public class TodosTests {
     @Test
     public void todoMaxLimitTest() {
         todos = new Todos();
+        Todos.MAXTODOS = 7;
         for (int i = 0; i < task.length; i++) {
             todos.addTask(task[i]);
         }
